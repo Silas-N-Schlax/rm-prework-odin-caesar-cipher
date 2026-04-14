@@ -49,7 +49,7 @@ Navigate to the project directory:
 cd rm-prework-odin-caesar-cipher.git
 ```
 
-Run `lib/cipher.rb` in your terminal.
+Run `ruby lib/cipher.rb` in your terminal.
 
 ---
 
