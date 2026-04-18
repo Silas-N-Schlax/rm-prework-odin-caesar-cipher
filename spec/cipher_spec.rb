@@ -64,7 +64,7 @@ describe CaesarCipher do
       it "includes spaces, special characters, and is case sensitive" do
         input = "HellO wor!d!"
         expected = "MjqqT btw!i!"
-        expect(cipher.shift_text(input, 5)).to eq(expected)
+        expect(cipher.shift_textg(input, 5)).to eq(expected)
       end
     end
   end
