@@ -9,10 +9,28 @@
 #
 # See https://docs.rubocop.org/rubocop/configuration
 AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'spec/spec_helper.rb'
   NewCops: enable
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/*'
+    - 'spec_answers/*'
+Layout/LineLength:
+  Exclude:
+    - 'spec/*'
+    - 'spec_answers/*'
+Lint/EmptyBlock:
+  Exclude:
+    - 'spec/*'
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+
+RSpec:
+  Exclude:
+    - 'spec/*'
