@@ -1,12 +1,12 @@
 # Caesar Cipher
 class CaesarCipher
   def user_text_cipher
-    puts "What text would you like me to add a Caesar Cipher to?"
+    print "What text would you like me to add a Caesar Cipher to? -> "
     gets.chomp
   end
 
   def user_shift_index
-    puts "What is the shift index you want to use? (Cannot be equal to 0)"
+    print "What is the shift index you want to use? (Cannot be equal to 0) -> "
     input = gets.chomp.to_i
     user_shift_index if input.zero?
     input
@@ -43,4 +43,4 @@ class CaesarCipher
   end
 end
 
-# CaesarCipher.new.run
+CaesarCipher.new.run
